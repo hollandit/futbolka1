@@ -13,7 +13,7 @@ function sendSMTP($to, $subject, $message, $attach=false)
 	$mail->SMTPAuth = true;
 	$mail->CharSet = "utf-8";
 	$mail->Username = "holland.itkzn@gmail.com";
-	$mail->Password = "JKka235s7";
+	$mail->Password = "123456";
 	$mail->addAddress($to);
 	$mail->From = $to;
 	$mail->Subject = $subject;
