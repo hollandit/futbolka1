@@ -22,6 +22,7 @@
 	<script>
 		$(function($){
 			$("#phoneOrder").mask("7(999)999-99-99");
+			$("#phoneInput").mask("7(999)999-99-99");
 		});
 	</script>
 	<script src="js/send.js"></script>
@@ -69,26 +70,29 @@ function sizePic(){
 }
 </script>
 <script>
-$(document).ready(function(){
-	$('#colorpickerHolder').ColorPicker({color: '#0000ff',
-	onShow: function (colpkr) {
-		$(colpkr).fadeIn(500);
-		return false;
-	},
-	onHide: function (colpkr) {
-		$(colpkr).fadeOut(500);
-		return false;
-	},
-	onChange: function (hsb, hex, rgb) {
-		$('#colorpickerHolder div').css('backgroundColor', '#' + hex);
-	}}
-})
-})
-	
+// $(document).ready(function(){
+// 	$('#colorpickerHolder').ColorPicker({color: '#0000ff',
+// 	onShow: function (colpkr) {
+// 		$(colpkr).fadeIn(500);
+// 		return false;
+// 	},
+// 	onHide: function (colpkr) {
+// 		$(colpkr).fadeOut(500);
+// 		return false;
+// 	},
+// 	onChange: function (hsb, hex, rgb) {
+// 		$('#colorpickerHolder div').css('backgroundColor', '#' + hex);
+// 		}
+// 	})
+// })
 </script>
 <body>
 	<?php require_once("header.php"); ?>
 	<form id="fileForm" name="uploadImage" method="POST" enctype="multipart/form-data" action="orderBuy.php">
+	<input type="text" name="leftCanvas" id="leftCanvas" hidden>
+	<input type="text" name="topCanvas" id="topCanvas" hidden>
+	<input type="text" name="leftText" id="leftText" hidden>
+	<input type="text" name="topText" id="topText" hidden>
 	<div class="container layerKonstr"">
 		<div class="row">
 			<div class="col-sm-6">
@@ -124,7 +128,7 @@ $(document).ready(function(){
 					</canvas>
 					<div id="blockColor">
 						<img id="urlAdress" class="draggable" src="">			
-						<img id="imgageKonstr" name="imageType" src="image/konstruktor/мужская футболка.png">
+						<img id="imgageKonstr" name="imageType" src="image/konstruktor/mushskaya_futbolka.png">
 					</div>
 				</div>
 				<script>
@@ -156,15 +160,15 @@ $(document).ready(function(){
 				});
 				</script>
 				<div id="typ">
-					<input type="radio" id="option1" name="scr" class="radioKonst" value="image/konstruktor/мужская футболка.png" data-price="100" checked hidden><label for="option1"><img src="image/konstruktor/мужская футболка.png" class="imageType"><div class="textType">Футболка</div></label>
+					<input type="radio" id="option1" name="scr" class="radioKonst" value="image/konstruktor/mushskaya_futbolka.png" data-price="380" checked hidden><label for="option1"><img src="image/konstruktor/mushskaya_futbolka.png" class="imageType"><div class="textType">Футболка</div></label>
 
-					<input type="radio" id="option2" class="radioKonst" name="scr" value="image/konstruktor/мужская майка.png" hidden data-price="200"><label for="option2"><img src="image/konstruktor/мужская майка.png" class="imageType"><div class="textType">Майка</div></label>
+					<input type="radio" id="option2" class="radioKonst" name="scr" value="image/konstruktor/mushskaya_mayka.png" hidden data-price="300"><label for="option2"><img src="image/konstruktor/mushskaya_mayka.png" class="imageType"><div class="textType">Майка</div></label>
 
-					<input type="radio" id="option3" class="radioKonst" name="scr" value="image/konstruktor/мужская поло.png" hidden  data-price="300"><label for="option3"><img src="image/konstruktor/мужская поло.png" class="imageType"><div class="textType">Поло</div></label>
+					<input type="radio" id="option3" class="radioKonst" name="scr" value="image/konstruktor/mushskaya_polo.png" hidden  data-price="680"><label for="option3"><img src="image/konstruktor/mushskaya_polo.png" class="imageType"><div class="textType">Поло</div></label>
 
-					<input type="radio" id="option4" class="radioKonst" name="scr" value="image/konstruktor/женский свитшот.png" hidden data-price="400" ><label for="option4"><img src="image/konstruktor/женский свитшот.png" class="imageType" style="width: 71px;"><div class="textType">Свитшот</div></label>
+					<input type="radio" id="option4" class="radioKonst" name="scr" value="image/konstruktor/jenskaya_svidshot.png" hidden data-price="850" ><label for="option4"><img src="image/konstruktor/jenskaya_svidshot.png" class="imageType" style="width: 71px;"><div class="textType">Свитшот</div></label>
 
-					<input type="radio" id="option5" class="radioKonst" name="scr" value="image/konstruktor/худи.png" hidden data-price="500"><label for="option5"><img src="image/konstruktor/худи.png" class="imageType"><div class="textType">Худи</div></label>
+					<input type="radio" id="option5" class="radioKonst" name="scr" value="image/konstruktor/hudi.png" hidden data-price="850"><label for="option5"><img src="image/konstruktor/hudi.png" class="imageType"><div class="textType">Худи</div></label>
 				</div>
 			</div>
 			<form method="POST" id="formKonstrukt" enctype="multipart/form-data">
@@ -194,8 +198,8 @@ $(document).ready(function(){
 						</div>
 						<div class="konstrFileLabel">Настройте изображение:</div>
 						<div style="float: right; width: 59%;">
-							<div class ="rangeText"><div class="textRange">Поворот: </div><input type="range" name="turn" id="turn" min="-180" max="180" value="0"></div>
-							<div class="rangeText"><div class="textRange">Размер: </div><input type="range" name="size" id="size" min="0" max="100" value="50" oninput="sizePic()"></div>
+							<div class ="rangeText"><div class="textRange">Поворот: </div><input type="range" name="turn" id="turn" min="0" max="360" value="0"></div>
+							<div class="rangeText"><div class="textRange">Размер: </div><input type="range" name="size" id="size" min="0" max="100" value="0" oninput="sizePic()"></div>
 							<div class ="rangeText"><div class="textRange">Прозрачность: </div><input type="range" name="visibility" id="visibility" min="0" max="100" value="100"></div>
 						</div>
 					</div>
@@ -216,19 +220,19 @@ $(document).ready(function(){
 							          <div id="colorpickerHolder"></div>
 									<select class="selectKonstr fontFamily" id="font" name="textKonstr">
 										<option value="Arial">Arial</option>
-										<option value="Times New Roman">Times New Roman</option>
+										<!-- <option value="Times New Roman">Times New Roman</option>
 										<option value="MS Sans Serif">MS Sans Serif</option>
-										<option value="Courier New">Courier New</option>
-										<option value="pricedown">pricedown</option>
-										<option value="a_BraggaStars">a_BraggaStars</option>
-										<option value="a_BremenDcFr">a_BremenDcFr</option>
-										<option value="a_CampusGrDcFr">a_CampusGrDcFr</option>
-										<option value="a_FuturaRound">FuturaRound</option>
-										<option value="a_PlakatTitul">a_PlakatTitul</option>
-										<option value="Bulka">Bulka</option>
-										<option value="DSArmyCyr">DSArmyCyr</option>
-										<option value="ErikaBold">ErikaBold</option>
-										<option value="JikharevBoldItalic">JikharevBoldItalic</option>
+										<option value="Courier New">Courier New</option> -->
+										<option value="fonts/konstruktor/pricedown.ttf">pricedown</option>
+										<option value="fonts/konstruktor/a_BraggaStars.ttf">a_BraggaStars</option>
+										<option value="fonts/konstruktor/a_BremenDcFr.ttf">a_BremenDcFr</option>
+										<option value="fonts/konstruktor/a_CampusGrDcFr.ttf">a_CampusGrDcFr</option>
+										<option value="fonts/konstruktor/a_FuturaRound">FuturaRound</option>
+										<option value="fonts/konstruktor/a_PlakatTitul">a_PlakatTitul</option>
+										<option value="fonts/konstruktor/Bulka">Bulka</option>
+										<option value="fonts/konstruktor/DSArmyCyr">DSArmyCyr</option>
+										<option value="fonts/konstruktor/ErikaBold">ErikaBold</option>
+										<option value="fonts/konstruktor/JikharevBoldItalic">JikharevBoldItalic</option>
 									</select>
 									<select class="selectKonstr sizeText" name="sizeText" id="sizeText">
 										<option value="8">8</option>
