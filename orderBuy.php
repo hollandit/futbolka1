@@ -9,7 +9,7 @@ $sizeText = htmlspecialchars($_POST["sizeText"]);
 $leftText = htmlspecialchars($_POST["leftText"]);
 $topText = htmlspecialchars($_POST["topText"]);
 
-header("Location: thank.php");
+// header("Location: thank.php");
 
 $im = imagecreatetruecolor(466, 465);
 
@@ -90,8 +90,8 @@ $width = imagesx($im1);
 $height = imagesy($im1);
 imagecopyresampled($im, $im1, 0, 0, 0, 0, 466, 465, $width, $height);
 
-// header('Content-Type: image/jpeg');
-// imagejpeg($im);
+header('Content-Type: image/jpeg');
+imagejpeg($im);
 imagejpeg($im, $imageSave, 100);
 imagedestroy($im);
 imagedestroy($im1);
@@ -104,5 +104,5 @@ $price = htmlspecialchars($_POST["price"]);
 $to="zackieff@gmail.com";
 $subject="Конструктор с сайта Печать  на футболках";
 $message = "Телефон ".$tel."\n Тип ".$type."\n Цвет ".$color."\n Название картинки ".$imageFile1."\n Поворот ".$turn."\n Масштаб ".$size."\n Прозрачность ".$visibility."\n Шрифт ".$font."\n Текст ".$text."\n Смещен влево текст ".$leftCanvas."\n Смещен сверху текст ".$topCanvas."\n Размер текста ".$sizeText."\n Цвет текста ".$colorText."\n Размер футболки ".$sizeFutbol."\n Количество штук ".$number."\n Прайс ".$price."\n Изображение футболки: ".$imageSave;
-sendSMTP($to, $subject, $message, $attach);
+sendSMTP($to, $subject, $message, $attachment = array($imageFile1, $imageSave));
 ?>
