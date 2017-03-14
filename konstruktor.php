@@ -19,6 +19,7 @@
 	<script src="js/inputmask.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="colorpicker/js/colorpicker.js"></script>
+	<script src="js/jscolor.js"></script>
 	<script>
 		$(function($){
 			$("#phoneOrder").mask("7(999)999-99-99");
@@ -71,19 +72,17 @@ function sizePic(){
 </script>
 <script>
 // $(document).ready(function(){
-// 	$('#colorpickerHolder').ColorPicker({color: '#0000ff',
-// 	onShow: function (colpkr) {
-// 		$(colpkr).fadeIn(500);
-// 		return false;
-// 	},
-// 	onHide: function (colpkr) {
-// 		$(colpkr).fadeOut(500);
-// 		return false;
-// 	},
-// 	onChange: function (hsb, hex, rgb) {
-// 		$('#colorpickerHolder div').css('backgroundColor', '#' + hex);
-// 		}
-// 	})
+// 	$('#colorTextKons').ColorPicker({
+// 		onSubmit: function(hsb, hex, rgb) {
+// 	    $('#colorTextKons').val(hex);
+// 	    },
+// 	    onBeforeShow: function () {
+// 	        $(this).ColorPickerSetColor(this.value);
+// 	    }
+// 	  })
+//   .bind('keyup', function(){
+//     $(this).ColorPickerSetColor(this.value);
+//   });
 // })
 </script>
 <body>
@@ -211,28 +210,37 @@ function sizePic(){
 							<div style="width: 58%;float: right;margin-top: 3%;margin-right: 6px;">
 								<div id="addText1"><input type="text" name="text" id="textKonstr" placeholder="Ваш текст"></div>
 								<div id="textEdit">
-									<input type="color" id="colorTextKons" list="colorTextData" name="colorTextKons">
-							          <datalist id="colorTextData">
-							            <option value="#000000"></option>
-							            <option value="#ffffff"></option>
-							            <option value="#a10000"></option>
-							          </datalist>
-							          <div id="colorpickerHolder"></div>
+									<input type="color" id="colorTextKons" name="colorTextKons" list class="jscolor">
 									<select class="selectKonstr fontFamily" id="font" name="textKonstr">
-										<option value="Arial">Arial</option>
-										<!-- <option value="Times New Roman">Times New Roman</option>
-										<option value="MS Sans Serif">MS Sans Serif</option>
-										<option value="Courier New">Courier New</option> -->
-										<option value="fonts/konstruktor/pricedown.ttf">pricedown</option>
-										<option value="fonts/konstruktor/a_BraggaStars.ttf">a_BraggaStars</option>
-										<option value="fonts/konstruktor/a_BremenDcFr.ttf">a_BremenDcFr</option>
-										<option value="fonts/konstruktor/a_CampusGrDcFr.ttf">a_CampusGrDcFr</option>
-										<option value="fonts/konstruktor/a_FuturaRound">FuturaRound</option>
-										<option value="fonts/konstruktor/a_PlakatTitul">a_PlakatTitul</option>
-										<option value="fonts/konstruktor/Bulka">Bulka</option>
-										<option value="fonts/konstruktor/DSArmyCyr">DSArmyCyr</option>
-										<option value="fonts/konstruktor/ErikaBold">ErikaBold</option>
-										<option value="fonts/konstruktor/JikharevBoldItalic">JikharevBoldItalic</option>
+										<option value="pricedown" selected>pricedown</option>
+										<option value="a_BraggaStars">a_BraggaStars</option>
+										<option value="a_BremenDcFr">a_BremenDcFr</option>
+										<option value="a_CampusGrDcFr">a_CampusGrDcFr</option>
+										<option value="FuturaRound">FuturaRound</option>
+										<option value="a_PlakatTitul">a_PlakatTitul</option>
+										<option value="Bulka">Bulka</option>
+										<option value="DSArmyCyr">DSArmyCyr</option>
+										<option value="ErikaBold">ErikaBold</option>
+										<option value="JikharevBoldItalic">JikharevBoldItalic</option>
+										<option value="MartaDecorTwo">MartaDecorTwo</option>
+										<option value="MontblancCTT">MontblancCTT</option>
+										<option value="Montblanc">Montblanc</option>
+										<option value="Olietta">Olietta</option>
+										<option value="RosamundaOne">RosamundaOne</option>
+										<option value="RosamundaTwo">RosamundaTwo</option>
+										<option value="Swiss">Swiss</option>
+										<option value="T_Jihkarev">T_Jihkarev</option>
+										<option value="Terminator">Terminator</option>
+										<option value="Unicorn">Unicorn</option>
+										<option value="UnicornUkrainian">UnicornUkrainian</option>
+										<option value="yermak">yermak</option>
+										<option value="Lifehack">Lifehack</option>
+										<option value="LifehackBold">LifehackBold</option>
+										<option value="LifehackGoodies">LifehackGoodies</option>
+										<option value="Lifehack_Italick_Medium">Lifehack_Italick_Medium</option>
+										<option value="LifehackItalic">LifehackItalic</option>
+										<option value="LifehackMedium">LifehackMedium</option>
+										<option value="tangak">tangak</option>
 									</select>
 									<select class="selectKonstr sizeText" name="sizeText" id="sizeText">
 										<option value="8">8</option>

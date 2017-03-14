@@ -1,0 +1,248 @@
+
+/*TTF формат*/
+@font-face{
+	font-family: pricedown;
+	src: url(../fonts/konstruktor/pricedown.ttf);
+}
+@font-face{
+	font-family: a_BraggaStars;
+	src: url(../fonts/konstruktor/a_BraggaStars.ttf);
+}
+@font-face{
+	font-family: a_BremenDcFr;
+	src: url(../fonts/konstruktor/a_BremenDcFr.ttf);
+}
+@font-face{
+	font-family: a_CampusGrDcFr;
+	src: url(../fonts/konstruktor/a_CampusGrDcFr.ttf);
+}
+@font-face{
+	font-family: FuturaRound;
+	src: url(../fonts/konstruktor/FuturaRound.ttf);
+	src: url("../fonts/konstruktor/FuturaRound/FuturaRound.eot");
+		    src: url("../fonts/konstruktor/FuturaRound/FuturaRound.eot?#iefix") format("embedded-opentype"),
+		         url("../fonts/konstruktor/FuturaRound/FuturaRound.woff") format("woff"),
+		         url("../fonts/konstruktor/FuturaRound/FuturaRound.ttf") format("truetype"),
+		         url("../fonts/konstruktor/FuturaRound/FuturaRound.svg#FuturaRound") format("svg");
+}
+@font-face{
+	font-family: a_PlakatTitul;
+	src: url(../fonts/konstruktor/a_PlakatTitul/a_PlakatTitul.ttf);
+	src: url("../fonts/konstruktor/a_PlakatTitul/a_PlakatTitul.eot");
+		    src: url("../fonts/konstruktor/a_PlakatTitul/a_PlakatTitul.eot?#iefix") format("embedded-opentype"),
+		         url("../fonts/konstruktor/a_PlakatTitul/a_PlakatTitulGr.woff") format("woff"),
+		         url("../fonts/konstruktor/a_PlakatTitul/a_PlakatTitul.ttf") format("truetype"),
+		         url("../fonts/konstruktor/a_PlakatTitul/a_PlakatTitulGr.svg#a_PlakatTitul") format("svg");
+}
+@font-face{
+	font-family: Bulka;
+	src: url(../fonts/konstruktor/Bulka/Bulka.ttf);
+	src: url("../fonts/konstruktor/Bulka/Bulka.eot");
+		    src: url("../fonts/konstruktor/Bulka/Bulka.eot?#iefix") format("embedded-opentype"),
+		         url("../fonts/konstruktor/Bulka/Bulka.woff") format("woff"),
+		         url("../fonts/konstruktor/Bulka/Bulka.ttf") format("truetype"),
+		         url("../fonts/konstruktor/Bulka/Bulka.svg#Bulka") format("svg");
+}
+@font-face{
+	font-family: CopyistThin;
+	src: url(../fonts/konstruktor/CopyistThin.ttf);
+}
+@font-face{
+	font-family: DSArmyCyr;
+	src: url(../fonts/konstruktor/DSArmyCyr/DSArmyCyr.ttf);
+	src: url("../fonts/konstruktor/DSArmyCyr/DSArmyCyr.eot");
+		    src: url("../fonts/konstruktor/DSArmyCyr/DSArmyCyr.eot?#iefix") format("embedded-opentype"),
+		         url("../fonts/konstruktor/DSArmyCyr/DSArmyCyr.woff") format("woff"),
+		         url("../fonts/konstruktor/DSArmyCyr/DSArmyCyr.ttf") format("truetype"),
+		         url("../fonts/konstruktor/DSArmyCyr/DSArmyCyr.svg#DSArmyCyr") format("svg");
+}
+@font-face{
+	font-family: ErikaBold;
+	src: url(../fonts/konstruktor/ErikaBold/ErikaBold.ttf);
+	src: url("../fonts/konstruktor/ErikaBold/ErikaBold.eot");
+	    src: url("../fonts/konstruktor/ErikaBold/ErikaBold.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/ErikaBold/ErikaBold.woff") format("woff"),
+	         url("../fonts/konstruktor/ErikaBold/ErikaBold.ttf") format("truetype"),
+	         url("../fonts/konstruktor/ErikaBold/ErikaBold.svg#ErikaBold") format("svg");
+}
+@font-face{
+	font-family: JikharevBoldItalic;
+	src: url(../fonts/konstruktor/JikharevBoldItalic/JikharevBoldItalic.ttf);
+	src: url("../fonts/konstruktor/JikharevBoldItalic/JikharevBoldItalic.eot");
+	    src: url("../fonts/konstruktor/JikharevBoldItalic/JikharevBoldItalic.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/JikharevBoldItalic/JikharevPlain.woff") format("woff"),
+	         url("../fonts/konstruktor/JikharevBoldItalic/JikharevBoldItalic.ttf") format("truetype"),
+	         url("../fonts/konstruktor/JikharevBoldItalic/JikharevPlain.svg#JikharevBoldItalic") format("svg");
+}
+@font-face{
+	font-family: MartaDecorTwo;
+	src: url(../fonts/konstruktor/MartaDecorTwo.ttf);
+}
+@font-face{
+	font-family: MontblancCTT;
+	src: url(../fonts/konstruktor/MontblancCTT Italic/MontblancCTT Italic.ttf);
+	src: url("../fonts/konstruktor/MontblancCTT Italic/MontblancCTT Italic.eot");
+	    src: url("../fonts/konstruktor/MontblancCTT Italic/MontblancCTT Italictalic.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/MontblancCTT Italic/MontblancCTT-Italic.woff") format("woff"),
+	         url("../fonts/konstruktor/MontblancCTT Italic/MontblancCTT Italic.ttf") format("truetype"),
+	         url("../fonts/konstruktor/MontblancCTT Italic/MontblancCTT-Italic.svg#MontblancCTT Italic") format("svg");
+}
+@font-face{
+	font-family: Montblanc;
+	src: url(../fonts/konstruktor/MontblancCTT/MontblancCTT.ttf);
+	src: url("../fonts/konstruktor/MontblancCTT/MontblancCTT.eot");
+	    src: url("../fonts/konstruktor/MontblancCTT/MontblancCTT.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/MontblancCTT/MontblancCTT.woff") format("woff"),
+	         url("../fonts/konstruktor/MontblancCTT/MontblancCTT.ttf") format("truetype"),
+	         url("../fonts/konstruktor/MontblancCTT/MontblancCTT.svg#MontblancCTT") format("svg");
+}
+@font-face{
+	font-family: Olietta;
+	src: url(../fonts/konstruktor/Olietta/Olietta script BoldItalic.ttf);
+	src: url("../fonts/konstruktor/Olietta/Olietta script BoldItalic.eot");
+	    src: url("../fonts/konstruktor/Olietta/Olietta script BoldItalic.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Olietta/Oliettascript-BoldItalic.woff") format("woff"),
+	         url("../fonts/konstruktor/Olietta/Olietta script BoldItalic.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Olietta/Oliettascript-BoldItalic.svg#Olietta script BoldItalic") format("svg");
+}
+@font-face{
+	font-family: RosamundaOne;
+	src: url(../fonts/konstruktor/Rosamunda One Normal/Rosamunda One Normal.ttf);
+	src: url("../fonts/konstruktor/Rosamunda One Normal/Rosamunda One Normal.eot");
+	    src: url("../fonts/konstruktor/Rosamunda One Normal/Rosamunda One Normal.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Rosamunda One Normal/RosamundaOne-Normal.woff") format("woff"),
+	         url("../fonts/konstruktor/Rosamunda One Normal/Rosamunda One Normal.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Rosamunda One Normal/RosamundaOne-Normal.svg#Rosamunda One Normal") format("svg");
+}
+@font-face{
+	font-family: RosamundaTwo;
+	src: url(../fonts/konstruktor/Rosamunda Two/Rosamunda Two.ttf);
+	src: url("../fonts/konstruktor/Rosamunda Two/Rosamunda Two.eot");
+	    src: url("../fonts/konstruktor/Rosamunda Two/Rosamunda Two.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Rosamunda Two/RosamundaTwo.woff") format("woff"),
+	         url("../fonts/konstruktor/Rosamunda Two/Rosamunda Two.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Rosamunda Two/RosamundaTwo.svg#Rosamunda Two") format("svg");
+}
+@font-face{
+	font-family: Swiss;
+	src: url(../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37 Italic.ttf);
+	src: url("../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37 Italic.eot");
+	    src: url("../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37 Italic.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37-Italic.woff") format("woff"),
+	         url("../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37 Italic.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Swiss_extra_comp_37 Italic/Swiss_extra_comp_37-Italic.svg#Swiss_extra_comp_37 Italic") format("svg");
+}
+@font-face{
+	font-family: T_Jihkarev;
+	src: url(../fonts/konstruktor/T_Jihkarev.ttf);
+}
+@font-face{
+	font-family: Terminator;
+	src: url(../fonts/konstruktor/Terminator/Terminator Cyr Semi-expanded Bold.ttf);
+	src: url("../fonts/konstruktor/Terminator/Terminator Cyr Semi-expanded Bold.eot");
+	    src: url("../fonts/konstruktor/Terminator/Terminator Cyr Semi-expanded Bold.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Terminator/TerminatorCyr-Semi-expandedBold.woff") format("woff"),
+	         url("../fonts/konstruktor/Terminator/Terminator Cyr Semi-expanded Bold.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Terminator/TerminatorCyr-Semi-expandedBold.svg#Terminator Cyr Semi-expanded Bold") format("svg");
+}
+@font-face{
+	font-family: Unicorn;
+	src: url(../fonts/konstruktor/Unicorn Rus/Unicorn Rus.ttf);
+	src: url("../fonts/konstruktor/Unicorn Rus/Unicorn Rus.eot");
+	    src: url("../fonts/konstruktor/Unicorn Rus/Unicorn Rus.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Unicorn Rus/UnicornUkrainian.woff") format("woff"),
+	         url("../fonts/konstruktor/Unicorn Rus/Unicorn Rus.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Unicorn Rus/UnicornUkrainian.svg#Unicorn Rus") format("svg");
+}
+@font-face{
+	font-family: UnicornUkrainian;
+	src: url(../fonts/konstruktor/Unicorn Ukrainian/Unicorn Ukrainian.ttf);
+	src: url("../fonts/konstruktor/Unicorn Ukrainian/Unicorn Ukrainian.eot");
+	    src: url("../fonts/konstruktor/Unicorn Ukrainian/Unicorn Ukrainian.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Unicorn Ukrainian/UnicornUkrainian.woff") format("woff"),
+	         url("../fonts/konstruktor/Unicorn Ukrainian/Unicorn Ukrainian.ttf") format("truetype"),
+	         url("../fonts/konstruktor/Unicorn Ukrainian/UnicornUkrainian.svg#Unicorn Ukrainian") format("svg");
+}
+@font-face{
+	font-family: yermak;
+	src: url(../fonts/konstruktor/yermak/yermak.ttf);
+	src: url("../fonts/konstruktor/yermak/yermak.TTF.eot");
+	    src: url("../fonts/konstruktor/yermak/yermak.TTF.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/yermak/DSYermak_D.woff") format("woff"),
+	         url("../fonts/konstruktor/yermak/yermak.ttf") format("truetype"),
+	         url("../fonts/konstruktor/yermak/DSYermak_D.svg#yermak") format("svg");
+}
+
+/*OTF формат*/
+@font-face{
+	font-family: Lifehack;
+	src: url(../fonts/konstruktor/Lifehack Basic/Lifehack Basic.otf);
+	src: url("../fonts/konstruktor/Lifehack Basic/LifehackBasic-Regular.eot");
+	    src: url("../fonts/konstruktor/Lifehack Basic/Lifehack Basic.TTF.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Basic/LifehackBasic-Regular.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Basic/Lifehack Basic.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Basic/LifehackBasic-Regular.svg#Lifehack Basic") format("svg");
+}
+@font-face{
+	font-family: LifehackBold;
+	src: url(../fonts/konstruktor/Lifehack Bold/Lifehack Bold.otf);
+	src: url("../fonts/konstruktor/Lifehack Bold/Lifehack Bold.TTF.eot");
+	    src: url("../fonts/konstruktor/Lifehack Bold/Lifehack-Bold.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Bold/Lifehack-Bold.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Bold/Lifehack-Bold.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Bold/Lifehack-Bold.svg#Lifehack Bold") format("svg");
+}
+@font-face{
+	font-family: LifehackGoodies;
+	src: url(../fonts/konstruktor/Lifehack Goodies/Lifehack Goodies.otf);
+	src: url("../fonts/konstruktor/Lifehack Goodies/Lifehack Goodies.eot");
+	    src: url("../fonts/konstruktor/Lifehack Goodies/LifehackGoodies-Regular.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Goodies/LifehackGoodies-Regular.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Goodies/Lifehack Goodies.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Goodies/LifehackGoodies-Regular.svg#Lifehack Goodies") format("svg");
+}
+@font-face{
+	font-family: LifehackBold;
+	src: url(../fonts/konstruktor/Lifehack Italic Bold/Lifehack Italic Bold.otf);
+	src: url("../fonts/konstruktor/Lifehack Italic Bold/LifehackItalic-Bold.eot");
+	    src: url("../fonts/konstruktor/Lifehack Italic Bold/LifehackItalic-Bold.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Italic Bold/LifehackItalic-Bold.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Italic Bold/Lifehack Italic Bold.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Italic Bold/LifehackItalic-Bold.svg#Lifehack Italic Bold") format("svg");
+}
+@font-face{
+	font-family: Lifehack_Italick_Medium;
+	src: url(../fonts/konstruktor/Lifehack Italic Medium/Lifehack Italic Medium.otf);
+	src: url("../fonts/konstruktor/Lifehack Italic Medium/.eot");
+	    src: url("../fonts/konstruktor/Lifehack Italic Medium/LifehackItalic-Medium.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Italic Medium/LifehackItalic-Medium.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Italic Medium/Lifehack Italic Medium.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Italic Medium/LifehackItalic-Medium.svg#Lifehack Italic Medium.otf") format("svg");
+}
+@font-face{
+	font-family: LifehackItalic;
+	src: url(../fonts/konstruktor/Lifehack Italic/Lifehack Italic.otf);
+	src: url("../fonts/konstruktor/Lifehack Italic/.eot");
+	    src: url("../fonts/konstruktor/Lifehack Italic/LifehackItalic-Regular.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Italic/LifehackItalic-Regular.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Italic/LifehackItalic-Regular.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Italic/LifehackItalic-Regular.svg#Lifehack Italic") format("svg");
+}
+@font-face{
+	font-family: LifehackMedium;
+	src: url(../fonts/konstruktor/Lifehack Medium/Lifehack Medium.otf);
+	src: url("../fonts/konstruktor/Lifehack Medium/Lifehack-Medium.eot");
+	    src: url("../fonts/konstruktor/Lifehack Medium/Lifehack-Medium.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/Lifehack Medium/Lifehack-Medium.woff") format("woff"),
+	         url("../fonts/konstruktor/Lifehack Medium/Lifehack Medium.otf") format("truetype"),
+	         url("../fonts/konstruktor/Lifehack Medium/Lifehack-Medium.svg#Lifehack Medium") format("svg");
+}
+@font-face{
+	font-family: tangak;
+	src: url(../fonts/konstruktor/tangak/tangak.otf);
+	src: url("../fonts/konstruktor/tangak/tangak.eot");
+	    src: url("../fonts/konstruktor/tangak/tangak.eot?#iefix") format("embedded-opentype"),
+	         url("../fonts/konstruktor/tangak/tangak.woff") format("woff"),
+	         url("../fonts/konstruktor/tangak/tangak.otf") format("truetype"),
+	         url("../fonts/konstruktor/tangak/tangak.svg#tangak") format("svg");
+}

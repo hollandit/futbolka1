@@ -9,7 +9,103 @@ $sizeText = htmlspecialchars($_POST["sizeText"]);
 $leftText = htmlspecialchars($_POST["leftText"]);
 $topText = htmlspecialchars($_POST["topText"]);
 
-// header("Location: thank.php");
+$fontFace = htmlspecialchars($_POST["textKonstr"]);
+$src =  "fonts/konstruktor/";
+switch ($fontFace) {
+	case 'arial':
+		$font = $font = $src."pricedown.ttf";
+		break;
+	case 'pricedown':
+		$font = $font = $src."pricedown.ttf";
+		break;
+	case 'a_BraggaStars':
+		$font = $font = $src."a_BraggaStars.ttf";
+		break;
+	case 'a_CampusGrDcFr':
+		$font = $font = $src."a_CampusGrDcFr.ttf";
+		break;
+	case 'FuturaRound':
+		$font = $font = $src."FuturaRound/FuturaRound.ttf";
+		break;
+	case 'a_PlakatTitul':
+		$font = $font = $src."a_PlakatTitul/a_PlakatTitul.ttf";
+		break;
+	case 'Bulka':
+		$font = $font = $src."Bulka/Bulka.ttf";
+		break;
+	case 'DSArmyCyr':
+		$font = $font = $src."DSArmyCyr/DSArmyCyr.ttf";
+		break;
+	case 'ErikaBold':
+		$font = $font = $src."ErikaBold/ErikaBold.ttf";
+		break;
+	case 'JikharevBoldItalic':
+		$font = $font = $src."JikharevBoldItalic/JikharevBoldItalic.ttf";
+		break;
+	case 'MartaDecorTwo':
+		$font = $font = $src."MartaDecorTwo.ttf";
+		break;
+	case 'MontblancCTT':
+		$font = $font = $src."MontblancCTT Italic/MontblancCTT Italic.ttf";
+		break;
+	case 'Montblanc':
+		$font = $font = $src."MontblancCTT/MontblancCTT.ttf";
+		break;
+	case 'Olietta':
+		$font = $font = $src."Olietta/Olietta script BoldItalic.ttf";
+		break;
+	case 'RosamundaOne':
+		$font = $font = $src."Rosamunda One Normal/Rosamunda One Normal.ttf";
+		break;
+	case 'RosamundaTwo':
+		$font = $font = $src."Rosamunda Two/Rosamunda Two.ttf";
+		break;
+	case 'Swiss':
+		$font = $font = $src."Swiss_extra_comp_37 Italic/Swiss_extra_comp_37 Italic.ttf";
+		break;
+	case 'T_Jihkarev':
+		$font = $font = $src."T_Jihkarev.ttf";
+		break;
+	case 'Terminator':
+		$font = $font = $src."Terminator/Terminator Cyr Semi-expanded Bold.ttf";
+		break;
+	case 'Unicorn':
+		$font = $font = $src."Unicorn Rus/Unicorn Rus.ttf";
+		break;
+	case 'UnicornUkrainian':
+		$font = $font = $src."Unicorn Ukrainian/Unicorn Ukrainian.ttf";
+		break;
+	case 'yermak':
+		$font = $font = $src."yermak/yermak.ttf";
+		break;
+	case 'Lifehack':
+		$font = $font = $src."Lifehack Basic/Lifehack Basic.otf";
+		break;
+	case 'LifehackBold':
+		$font = $font = $src."Lifehack Bold/Lifehack Bold.otf";
+		break;
+	case 'LifehackGoodies':
+		$font = $font = $src."Lifehack Goodies/Lifehack Goodies.otf";
+		break;
+	case 'Lifehack Italic Bold':
+		$font = $font = $src."Lifehack Italic Bold/Lifehack Italic Bold.otf";
+		break;
+	case 'Lifehack_Italick_Medium':
+		$font = $font = $src."Lifehack Italic Medium/Lifehack Italic Medium.otf";
+		break;
+	case 'LifehackItalic':
+		$font = $font = $src."Lifehack Italic/Lifehack Italic.otf";
+		break;
+	case 'LifehackMedium':
+		$font = $font = $src."Lifehack Medium/Lifehack Medium.otf";
+		break;
+	case 'tangak':
+		$font = $font = $src."tangak/tangak.otf";
+		break;
+}
+
+
+header("Location: thank.php");
 
 $im = imagecreatetruecolor(466, 465);
 
@@ -21,10 +117,6 @@ if (isset($_POST["turn"])) {
 if (isset($_POST["text"])) {
 	$text = htmlspecialchars($_POST["text"]);
 } else {$text = "";}
-
-if (isset($_POST["textKonstr" == "arial"])) {
-	$font = htmlspecialchars($_POST["textKonstr"]);
-} else {$font = "fonts/konstruktor/pricedown.ttf";}
 
 list($r, $g, $b) = sscanf($colorText, "#%02x%02x%02x");
 $colorTextGd = imagecolorallocate($im, $r, $g, $b);
@@ -90,8 +182,8 @@ $width = imagesx($im1);
 $height = imagesy($im1);
 imagecopyresampled($im, $im1, 0, 0, 0, 0, 466, 465, $width, $height);
 
-header('Content-Type: image/jpeg');
-imagejpeg($im);
+// header('Content-Type: image/jpeg');
+// imagejpeg($im);
 imagejpeg($im, $imageSave, 100);
 imagedestroy($im);
 imagedestroy($im1);

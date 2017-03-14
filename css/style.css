@@ -1,0 +1,513 @@
+html, body{
+	background-image: url(/image/background.jpg);
+	background-size: 40%;
+	width: auto;
+	min-width: 800px;
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: Boldtext;
+	src: url(/fonts/site/9114.otf);
+}
+@font-face{
+	font-family: Neue Book;
+	src: url(/fonts/site/9117.otf);
+}
+@font-face{
+	font-family: MyriadPro-Cond;
+	src: url(/fonts/site/MyriadPro-Cond.otf);
+}
+@font-face{
+	font-family: Neue Regular;
+	src: url(/fonts/site/9116.ttf);
+}
+.logos{
+	background-image: url(/image/headeBackgroгnd.png);
+	background-position: 100%;
+	background-size: cover;
+	width: 100%;
+	height: 162px;
+	color: #ff5f00;
+}
+.logo{
+	width: 9px;
+	min-width: 	163px;
+	height: 42px;
+	float: left;
+	margin-top: 5px;
+}
+.infoShop{
+	position: absolute;
+	width: 17%;
+	min-width: 150px;
+	max-width: 214px;
+	margin-top: 4.5%;
+	margin-left: 1.5%;
+	font-size: 15px;
+	font-family: MyriadPro-Cond;
+}
+.net{
+	float: left;
+}
+#netBox{
+	width: 100%;
+}
+.center{
+	float: left;
+}
+.headerDescription1{
+	margin-left: 22%;
+	float: left;
+}
+.headerText{
+	width: 60px;
+	max-width: 224px;
+	min-width: 176px;
+	height: 105px;
+	margin-top: 6px;
+}
+.text1{color: #ff6600;}
+#TextLogo{
+	width: 25%;
+	float: left;
+	margin-left: 1%;
+	line-height: 30px;
+	color: #fff;
+}
+.phone{
+	font-size: 69px;
+	color: #ff6600;
+	margin-top: -5%;
+	font-family: Boldtext;
+	margin-left: 3%;
+}
+.call{
+	width: 244px;
+	background: #ffc710;
+	color: #543b36;
+	text-align: left;
+	border: none;
+	outline: none;
+	line-height: 51px;
+	margin-top: -4%;
+	border-radius: 26px;
+	height: 46px;
+	font-size: 27px;
+	font-family: Boldtext;
+}
+.boldText{
+	font-family: Boldtext;
+	font-size: 29px;
+}
+#procent{
+	font-size: 30px;
+}
+.phoneButton{
+	width: 14%;
+	margin-left: 2%;
+	margin-right: 10%;
+}
+#layer1{
+	padding-top: 0%;
+}
+.Layer{
+	padding-top: 1%;
+	padding-bottom: 3%;
+}
+.HeadCons{
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 3%;
+	margin-left: 6%;
+}
+.boldText{font-weight: bold;}
+.HeadCons h2{
+	font-size: 54px;
+	font-family: Boldtext;
+}
+#HeadText2{
+	font-size: 55px;
+	margin-top: -5%;
+	font-family: Boldtext;	
+}
+#konstructor{
+	margin-top: -8%;
+	cursor: pointer;
+	width: 1%;
+	margin-left: 98%;
+}
+#phoneSubmot, #phoneSubmot1{
+	width: 65%;
+	font-size: 30px;
+	text-align: center;
+	line-height: 36px;
+	font-family: Neue Book;
+}
+
+.discountText{
+	font-size: 26px;
+	color:#754112;
+	font-family: Neue Book;
+	font-weight: bold;
+	line-height: 39px;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-top: -1%;
+}
+#discountText1{
+	width: 9%;
+	margin-right: 1%;
+}
+.print1{font-size: 27px;}
+#discount35{
+	border: none;
+	background: rgba(166, 162,136);
+	padding: 0.5% 3.5% 0.5% 3.5%;
+	text-decoration: underline;
+	border-radius: 4px;
+	font-size: 22px;
+	outline: none;
+	font-weight: bold;
+	margin-left: 13.5%;
+	font-family: Neue Book;
+}
+.carousel{margin-top: 2px;}
+.item .thumb{
+	width: 15%;
+	cursor: pointer;
+	float: left;
+	margin-right: 1%;
+}
+#thumbcarousel{background: rgba(0, 0, 0, 0.39);border-radius: 8px;}
+.item .thumb img{width: 100%; margin: 2px; border-radius: 8px;}
+.item img{width: 100%;}
+.carousel-control1{width: 6%}
+#caroselSmallLeft,#caroselSmallRight{border-radius: 8px;}
+/*Слайдер*/
+#slider{
+	width: 106%;
+	background: #000;
+	height: 100%;
+	margin-left: -6%;
+	border-radius: 16px;
+	padding: 1.5% 7% 2% 7%;
+}
+#sliderSmall{
+	margin-left: 2%;
+	width: 100%;
+}
+#sliderSmallBox{
+	margin-right: 5%;
+	margin-top: 0.5%;
+}
+.slideOrderButton{
+    position: absolute;
+	margin-top: 50%;
+	border: none;
+	background: #ffc710;
+	font-size: 24px;
+	width: 135px;
+	margin-left: 70%;
+	outline: none;
+	border-radius: 16px;
+	font-family: Boldtext;
+	line-height: 36px;
+	box-shadow: 0 0 10px #9C9A9A;
+}
+.controlSlider{
+    width: 84%;
+    margin-top: 160px;
+}
+#leftControl{margin-left: -20px;}
+#rightControl{margin-right: -5%;}
+.phoneLabel{
+	margin-right: 1%;
+	padding: 0% 0% 0% 1%;
+}
+.lineTextStyle1{color: #fff;}
+.lineTextStyle2{color: #ffe7e7;}
+.phoneText{
+	width: 93%;
+	background: #ddd;
+	margin-left: 1%;
+	padding: 1% 0% 1% 5%;
+	border-radius: 5px;
+}
+.phoneText1{
+	color: #751c16;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Neue Book;
+}
+.phoneText input{
+	border-radius: 8px;
+	outline: none;
+}
+.HeadCons .phoneBox1{
+	width: 100%;
+	margin-bottom: 1%;
+	margin-top: 9%;
+}
+.phoneSpecify{
+	position: relative;
+	font-size: 14px;
+	text-align: right;
+	color: #754112;
+	font-family: Neue Regular;
+	width: 73%;
+	margin-left: 12.5%;
+	line-height: 16px;
+}
+.HeadConsBox{
+	margin-top: 16%;
+	/*background-image: url(image/ekran_1__podlozhka_obschaya_na_fon.png);*/
+	width: 100%;
+	margin-left: 30px;
+	/*padding: 5% 10% 9.3% 0%;*/
+	/*box-shadow: rgba(255, 255, 255, 0.25) -20px -1px 20px 0px, rgba(255, 255, 255, 0.35) 20px 0px 20px 0px, rgba(88, 88, 88, 0.18) -20px 0px 20px 0px;
+	background: rgba(255, 255, 255, 0.4);*/
+	border-radius: 18px;
+}
+.textBox1{color: #b53c3c;}
+#interpreter{
+	width: 91%;
+	margin-left: -5%;
+	font-size: 37px;
+}
+#design1{margin-top: 5%;}
+.design{
+	border-radius: 6px;
+	color: #fff;
+	border: none;
+	font-size: 38px;
+	background: #751c16;
+	outline: none;
+	font-family: Neue Regular;
+}
+.buttonLayerForm{
+	width: 84%;
+	line-height: 71px;
+	margin-top: -19px;
+	float: right;
+	margin-right: 6px;
+}
+#textButton1,#OrderButton1,#OrderButton2,#OrderButton3{color: #c4a98e;}
+.titleBox{
+	font-size: 61px;
+	font-family: Boldtext;
+}
+#reviewsBox{
+	width: 100%;
+	padding-top: 1%;
+	margin-bottom: 3%;
+}
+#reviewsBox img{
+	width:  270px;
+}
+#reviewsBox1{
+	text-align: center;
+	margin-bottom: 3%;
+}
+.reviews{
+	width: 107%;
+	padding: 7px;
+	padding-left: 2%;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.23);
+	margin-bottom: 5%;
+	border-radius: 8px;
+	}
+#reviewsExc{
+	width: 43%;
+	margin-right: 5%;
+	display: inline-block;
+}
+.reviews img{
+	height: 279px;
+	float: left;
+	margin: 0px 10px 6px 0px;
+}
+.rewiews div{
+	float: right;
+	padding-left: 100%;
+}
+.reviewsName{margin-top: 2%;}
+.buttonWant{
+	width: 45%;
+	border-radius: 20px;
+	border: none;
+	background: #ff6600;
+	color: #fff;
+	font-size: 23px;
+	padding: 1.2% 1% 1.2% 1%;
+	outline: none;
+	font-weight: bold;
+}
+.buttonWantBox{height: 60px;
+	line-height: 30px;
+	text-align: center;
+}
+.fileForm{
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	cursor: pointer;
+	height: 30px;
+	overflow: hidden;
+	padding: 2px;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+}
+.fileForm .selectButton {
+	background-color: #a2a3a3;
+	border: 1px solid #939494;
+	border-radius: 2px;
+	color: #ffffff;
+	float: right;
+	font-size: 19px;
+	height: 24px;
+	line-height: 20px;
+	overflow: hidden;
+	padding: 2px 6px;
+	font-family: Neue Book;
+	text-align: center;
+	vertical-align: middle;
+	width: 122px;  
+}
+.fileForm #imgFile, #imgFile1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	font-size: 150px;
+	height: 30px;
+	z-index: 20;
+}
+
+.fileForm #fileFormLabel,#fileFormLabel1{
+	background-color: #ffffff;
+	color: #000;
+	font-size: 18px;
+	float: left;
+	height: 26px;
+	line-height: 22px;
+	overflow: hidden;
+	padding: 2px;
+	text-align: left;
+	vertical-align: middle;
+	width: 151px;
+}
+.lineLayer{
+	background: rgba(87, 80, 73, 0.5);
+	width: 100%;
+	height: 159px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 34px;
+}
+.textLayer{
+	font-family: Boldtext;
+	font-size: 44px;
+	line-height: 41px;
+	color: #3C2618;
+}
+#textBox1{
+	text-align: center;
+	margin-bottom: 4%;
+	font-family: Boldtext;
+}
+.buttonEdit{
+	border-radius: 8px;
+	color: #fff;
+	width: 100%;
+	display: block;
+	border: none;
+	padding: 1% 8% 1% 8%;
+	font-size: 33px;
+	background: #94312f;
+	outline: none;
+	font-family: Neue Book;
+	font-weight: bold;
+}
+.buttonLayer{
+	text-align: center;
+	line-height: 50px;
+	margin-top: 2%;
+}
+.layer{
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+.layerKol{background-color: rgba(255, 255, 255, 0.62);}
+#imageCollection1{width: 210px;}
+#imageCollection5{width: 251px;}
+#imageCollection6{width: 214px;}
+#imageCollection7{width: 242px;}
+#imageCollection12{width: 288px;height: 228px;}
+#imageCollection21{width: 253px;}
+#imageCollection22,#imageCollection23{width: 225px;}
+#imageCollection24{width: 229px;}
+#imageCollection25,#imageCollection26{width: 243px;}
+#imageCollection28{width: 224px;}
+#imageCollection39{width: 239px;}
+#imageCollection42{width: 246px;}
+#imageCollection45{width: 215px;}
+.work{
+	text-align: center;
+	margin-bottom: 5%;
+	font-family: Boldtext;
+	font-size: 61px;
+}
+.block{
+	width: 100%;
+}
+.workText{
+	width: 16%;
+	float: left;
+	margin-right: 3.7%;
+	text-align: justify-all;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 1%;
+	height: 100%;
+}
+.workText1{
+	font-size: 14px;
+}
+.workText2{
+	background: #8b91b9;
+	padding: 10px;
+	border-radius: 16px;
+	margin-bottom: 15%;
+}
+#discount{
+	width: 95%;
+	margin-top: 16%;
+	margin-left: 8%;
+}
+#textDiscount{
+	font-size: 53px;
+	font-family: Boldtext;
+}
+#saleDiscount{
+	width: 100%;
+	text-align: center;
+}
+#footer{
+    height: 258px;
+}
+#discoutnButton{
+	width: 71%;
+	margin-left: 14%;
+}
+.buttonEdit a, .buttonEdit a:hover{
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}

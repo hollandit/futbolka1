@@ -1,0 +1,172 @@
+@media(max-width: 1920px){
+	.headerText{margin-left: 67%;}
+	.logoHeader{padding-top: 1.5%;}
+	#discount35{margin-left: 4.5%;}
+	.infoShop{
+		width: 5%;
+		margin-top: 50px;
+		margin-left: -1.9%;
+		font-size: 19px;
+		line-height: 22px;
+	}
+	.city{
+		font-size: 20px;
+		width: 56%;
+		color: #863502;
+	}
+	.logo{
+		margin-left: -3%;
+	}
+	.net{
+		width: 75%;
+		color: #863502;
+	}
+	.center{color: #863502;}
+	.headerDescription1{width: 13%;}
+	.phoneBox{
+		width: 23%;
+		float: right;
+		margin-top: -0.2%;
+	}
+	.phoneButton{margin-right: 6%;}
+}
+
+@media (max-width: 1239px){
+	.phoneBox{width: 21%; margin-right: 0;}
+	.call{width: 232px;}
+}
+
+@media (max-width: 1239px)
+{
+	#slider{margin-left: 0;}
+}
+
+@media (max-width: 1199px){
+	.reviews{height: 375px;}
+	.logo{margin-left: 0;}
+	.net{width: 97px;}
+	.infoShop{width: 8%;margin-left: 0;}
+	.headerDescription1{margin-left: 9%;}
+	.call{width: 236px;}
+	.headerText{margin-left: 68%;}
+	.discountText{font-size: 17px;}
+	.print1{font-size: 20px;}
+	#discount35{margin-left: 16.5%;}
+	.HeadCons h2, #HeadText2{font-size: 44px;}
+	.HeadConsBox{width: 120%;}
+	#discount{margin-left: 25%;}
+	#imageCollection1{width: 168px;}
+	#imageCollection5{width: 201px;}
+	#imageCollection6{width: 171px;}
+	#imageCollection7{width: 193px;}
+	#imageCollection12{height: 188px;}
+	#imageCollection22{width: 183px;}
+	#imageCollection23,#imageCollection28{width: 180px;}
+	#imageCollection24{width: 184px;}
+	#imageCollection25,#imageCollection26{width: 194px;}
+	#imageCollection39{width: 196px;}
+	#imageCollection45{width: 173px;}
+}
+
+@media (max-width: 1166px)
+{
+	.netBox{font-size: 100%;}
+	.call{font-size: 25px;}
+	.phone{font-size: 63px;padding: 0px 0px 0px 10px;}
+	.phoneSpecify{margin-left: 22.5%;width: 75%;}
+	.HeadConsBox{width: 118%;}
+}
+
+@media (max-width: 1136px)
+{
+	.phoneSpecify{margin-left: 1.5%;width: 100%;}
+		.HeadConsBox{width: 113%;}
+}
+
+@media (max-width: 1115px)
+{
+	.phone{font-size: 54px;}
+	.call{font-size: 21px; width: 197px;}
+	.infoShop{font-size: 20px; width: 5%;}
+	.city{width: 63px;}
+	.net{width: 101px;}
+}
+
+@media (max-width: 1098px)
+{
+	.phoneSpecify{margin-left: -3.5%;width: 100%;font-size: 17px;}
+	.HeadConsBox{width: 103%;}
+}
+
+@media (max-width: 1098px)
+{
+	.HeadConsBox{width: 100%;}
+	#interpreter{font-size: 30px;}
+}
+
+@media (max-width: 995px)
+{
+	.net{width: 100%;}
+	.city{width: 100%; margin-top: 44%;}
+}
+@media(max-width: 991px){
+	.HeadCons h2, #HeadText2{font-size: 34px;}
+	.phoneText1,#phoneSubmot, #phoneSubmot1,#interpreter{font-size: 24px;}
+	.phoneSpecify{font-size: 14px;}
+	#slider{width: 100%;}
+	#discount35{margin-left: 1.5%; font-size: 17px;}
+	#leftControl{margin-left: -2.5%;}
+	.controlSlider{margin-top: 107px;}
+	.reviews{height: 100%;}
+	#reviewsBox img{width: 100%;}
+	#discount{margin-left: 6%;}
+	#imageCollection5{width: 200px;}
+	#imageCollection4,#imageCollection7{width: 201px;}
+	#imageCollection12{height: 130px;}
+	#imageCollection18{width: 205px;}
+	#imageCollection21{width: 194px;}
+	#imageCollection27{width: 202px;}
+	#imageCollection32, #imageCollection22{width: 173px;}
+	#imageCollection41{width: 189px;}
+	#imageCollection42{width: 204px;}
+}
+
+@media (max-width: 983px)
+{
+	.phone{font-size: 52px;}
+	.call{font-size: 20px;}
+	.headerText{width: 14%;}
+	.headerDescription1{margin-left: 0;}
+}
+
+@media (max-width: 983px)
+{
+	.call{width: 172px;}
+	.phoneBox{width: 28%;margin-right: -72px;}
+	.phone{font-size: 45px;}
+}
+
+@media (max-width: 881px)
+{
+	.phone{font-size: 40px;}
+	.headerText{margin-left: 100%;}
+	.call{font-size: 18px; width: 150px;}
+	.phoneBox{width: 21%;margin-right: -18px;}
+}
+
+@media (max-width: 821px)
+{
+	.HeadConsBox{width: 95%;}
+	.HeadCons h2, #HeadText2{font-size: 30px;}
+}
+
+@media (max-width: 767px){
+	#logos{height: 254px;}
+	.phoneBox{width: 21%;margin-right: -9px;}
+	#discount{width: 89%;margin-left: 4%;}
+	.HeadCons h2, #HeadText2{font-size: 78px;}
+	.phoneText1, #phoneSubmot, #phoneSubmot1, #interpreter{font-size: 48px;}
+	.phoneSpecify{font-size: 30px;}
+	.controlSlider{margin-top: 180px;}
+	#reviewsExc{margin-left: 2.5%;margin-right: 3%;}
+}

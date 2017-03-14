@@ -1,0 +1,49 @@
+.callCustomInput{
+	width: 100%;
+	text-align: center;
+	font-size: 29px;
+	color: #959494;
+	outline: none;
+	line-height: 33px;
+	display: block;
+	padding-top: 4px;
+	font-family: Boldtext;
+}
+.buttonModal{
+	padding: 3% 2% 2% 4%;
+	color: #fff;
+	border: none;
+	font-size: 32px;
+	background: #751c16;
+	font-family: Boldtext;
+	line-height: 35px;
+	display: block;
+	width: 100%;
+	margin-top: 4px;
+	border-radius: 4px;
+}
+
+#cintentModal{
+	width: 661px;
+}
+
+.callCustomModal{
+	height: 373px;
+}
+
+.textModal{
+	padding-top: 13%;
+	padding-left: 42%;
+	padding-right: 6%;
+}
+
+#callCustomModal1, #phonePhotoModal{
+	width: 100%;
+	text-align: left;
+}
+.modalWindow{
+	margin-top: 33.5%;
+}
+.textModalParag{
+	font-family: Neue Regular;
+}
