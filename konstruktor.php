@@ -70,21 +70,6 @@ function sizePic(){
 	img.width = 60+10*size;
 }
 </script>
-<script>
-// $(document).ready(function(){
-// 	$('#colorTextKons').ColorPicker({
-// 		onSubmit: function(hsb, hex, rgb) {
-// 	    $('#colorTextKons').val(hex);
-// 	    },
-// 	    onBeforeShow: function () {
-// 	        $(this).ColorPickerSetColor(this.value);
-// 	    }
-// 	  })
-//   .bind('keyup', function(){
-//     $(this).ColorPickerSetColor(this.value);
-//   });
-// })
-</script>
 <body>
 	<?php require_once("header.php"); ?>
 	<form id="fileForm" name="uploadImage" method="POST" enctype="multipart/form-data" action="orderBuy.php">
@@ -210,7 +195,8 @@ function sizePic(){
 							<div style="width: 58%;float: right;margin-top: 3%;margin-right: 6px;">
 								<div id="addText1"><input type="text" name="text" id="textKonstr" placeholder="Ваш текст"></div>
 								<div id="textEdit">
-									<input type="color" id="colorTextKons" name="colorTextKons" list class="jscolor">
+									<input type="color" id="colorTextKons" name="colorTextKons" list>
+									<!-- <input type="text" id="colorTextKons" name="colorTextKons" class="jscolor"> -->
 									<select class="selectKonstr fontFamily" id="font" name="textKonstr">
 										<option value="pricedown" selected>pricedown</option>
 										<option value="a_BraggaStars">a_BraggaStars</option>
@@ -266,8 +252,8 @@ function sizePic(){
 						<input type="button" name="order" value="Оформить заказ" class="design" data-toggle="modal" data-target=".bs-example-modal-lg" style="width: 54%;margin-left: 42%;height: 64px;">
 						<!-- <a href="index.html" id="return">Вернуться на главном</a> -->
 					</div>
-					<div>
-						<div id="price" style="float: left;width: 25px;"></div><span>рублей</span>
+					<div style="font-size: 35px;">
+						<div id="price" style="float: left;width: 45px;"></div><span>рублей</span>
 					</div>
 				</div>
 			</div>

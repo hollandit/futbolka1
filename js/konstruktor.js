@@ -62,7 +62,8 @@ $(document).ready(function(){
 	$(".selectKonstr").on("change", renderText);
 	$("#textKonstr").on("input", renderText);
 	$("#colorTextKons").on("input", function(){
-		ctx.fillStyle = $(this).val();
+		var color = $(this).val();
+		ctx.fillStyle = "#"+ color;
 	});
 });
 //Перемещать вставленное изображение

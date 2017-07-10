@@ -1,0 +1,175 @@
+<script>
+
+$(document).ready(function(){
+	$("#orderFutbolka").click(function(){
+		$.ajax({
+			url: "orderBuy.php",
+			type: "POST",
+			data: {
+				type: $('[name=scr]').val(), 
+				color: $("[name=color").val(),
+				img: $("#konstrFile").val(),
+				turn: $('[name=turn]').val(),
+				size: $('[name=size]').val(),
+				font: $("#font").val(),
+				text: $("#textKonstr").val(),
+				sizeText: $("#sizeText").val(),
+				colorText: $("#colorTextKons").val(),
+				sizeFutbol: $('[name=sizeFutbol]').val(),
+			},
+			success: function(data){
+				alert(data);
+			}
+		});
+	});
+});
+</script>
+<div class="row">
+	<div class="col-sm-6">
+		<div id="KonstrModul">
+			<canvas id="textImgKonstr" class="draggable">
+			</canvas>
+			<div id="blockColor">
+				<img id="urlAdress" class="draggable" src="">			
+				<img id="imgageKonstr" name="imageType" src="image/футболка2.png">
+			</div>
+		</div>
+	</div>
+	<!-- <form method="POST" id="formKonstrukt" enctype="multipart/form-data"> -->
+	<div class="col-sm-6">
+		<div class="konstHead">
+			<h2>Сделай дизайн за минуту и скачай</h2>
+			<div class="row">
+			<script src="js/konstruktor.js"></script>
+				<div id="typ">
+					<div id="textTyp">Тип</div>
+					<input type="radio" id="option1" name="scr" class="radioKonst" value="image/футболка2.png" checked hidden><label for="option1">Футболка</label>
+					<input type="radio" id="option2" class="radioKonst" name="scr" value="image/mujskaya_mayka_constr.png" hidden ><label for="option2">Майка</label>
+					<input type="radio" id="option3" class="radioKonst" name="scr" value="image/mujskaya_polo__constr.png" hidden ><label for="option3">Поло</label>
+					<input type="radio" id="option4" class="radioKonst" name="scr" value="image/hood_constr123123.png" hidden><label for="option4">Свитшот</label>
+					<input type="radio" id="option5" class="radioKonst" name="scr" value="image/hood_constr.png" hidden><label for="option5" >Худи</label>
+				</div>
+				<div class="color">
+					<div id="textImages">Изображение</div>
+					<div id="colorBox">
+						<div id="colorText">Цвет:</div>
+						<input type="radio" id="color1" name="color" class="radioColor" value="#ffffff" hidden checked>
+						<label for="color1" class="color-change-block" style="background-color: #fff;"></label>
+						<input type="radio" id="color2" name="color" class="radioColor" value="#d9534f" hidden>
+						<label for="color2" class="color-change-block" style="background-color: #d9534f;" ></label>
+						<input type="radio" id="color3" name="color" class="radioColor" value="#5cb85c" hidden>
+						<label for="color3" class="color-change-block" style="background-color: #5cb85c;"></label>
+						<input type="radio" id="color4" name="color" class="radioColor" value="#f0ad4e" hidden>
+						<label for="color4" class="color-change-block" style="background-color: #f0ad4e;"></label>
+						<input type="radio" id="color5" name="color" class="radioColor" value="#000000" hidden>
+						<label for="color5" class="color-change-block" style="background-color: #000;"></label>
+					</div>
+				</div>
+				<div class="color">
+					<form id="fileForm" name="uploadImage" method="POST" enctype="multipart/form-data">
+						<label for="konstrFile" id="konstrFileLabel">Выберите изображение</label>
+						<input type="file" name="photo" id="konstrFile" accept="image/jpeg,image/png">
+					</form>
+				</div>
+				<div class="color">
+					<div class ="rangeText">Поворот:</div>
+					<input type="range" name="turn" id="turn" min="-360" max="360" value="0">
+					<div class="rangeText">Размер:</div>
+					<input type="range" name="size" id="size" min="0" max="100" value="50" oninput="sizePic()">
+				</div>
+				<div class="color">
+					<input type="text" name="text" id="textKonstr">
+					<select class="selectKonstr fontFamily" id="font" name="textKonstr">
+						<option value="Arial">Arial</option>
+						<option value="Times New Roman">Times New Roman</option>
+						<option value="MS Sans Serif">MS Sans Serif</option>
+						<option value="Courier New">Courier New</option>
+					</select>
+					<select class="selectKonstr sizeText" name="sizeText" id="sizeText">
+						<option value="8">8</option>
+						<option value="10">10</option>
+						<option value="12">12</option>
+						<option value="14">14</option>
+						<option value="16">16</option>
+						<option value="18">18</option>
+						<option value="20" selected>20</option>
+						<option value="22">22</option>
+						<option value="24">24</option>
+						<option value="26">26</option>
+						<option value="28">28</option>
+						<option value="30">30</option>
+						<option value="32">32</option>
+						<option value="34">34</option>
+						<option value="36">36</option>					
+					</select>
+					<input type="color" id="colorTextKons" list="colorTextData" name="colorTextKons">
+			          <datalist id="colorTextData">
+			            <option value="#000000"></option>
+			            <option value="#ffffff"></option>
+			            <option value="#a10000"></option>
+			          </datalist>
+				</div>
+				<div class="color">
+					<input type="button" name="order" value="Заказать" class="design" data-toggle="modal" data-target=".bs-example-modal-lg">
+					<a href="index.html" id="return">Вернуться на главном</a>
+				</div>
+			</div>
+		</div>
+		<!-- Начальное модального окна для оформление заказа -->
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Оформление заказа</h4>
+					</div>
+					<div class="modal-body">
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-earphone"></span>
+							<input type="tel" class="form-control" placeholder="Введите номер телефона" name="phoneOrder">
+						</div>
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="XS">XS
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="X">X
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="M">M
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="L">L
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="XL">XL
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="sizeFutbol" id="XLL">XLL
+							</label>					
+						</div>
+						<div>
+							<span> Количество штук: </span>
+							<input type="number" name="number" id="number">
+						</div>
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-default">
+								<input type="radio" name="share" id="VK">VK
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="share" id="@">@
+							</label>
+							<label class="btn btn-default">
+								<input type="radio" name="share" id="downloads"><span class="glyphicon glyphicon-save"></span>
+							</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary" id="orderFutbolka">Заказать</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- </form> -->
+</div>

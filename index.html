@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Печать на футболках</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="icon" href="image/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fontKonstr.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/inputmask.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(function($){
+		$("#phoneSubmot").mask("7(999) 999-99-99");
+		$("#phoneSubmot1").mask("7(999) 999-99-99");
+		$(".callCustomInput").mask("7(999) 999-99-99");
+		$("#callCustomInput1").mask("7(999) 999-99-99");
+	});
+	</script>
+	<script src="js/send.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter42880899 = new Ya.Metrika({
+	                    id:42880899,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/42880899" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+	<div class ="logos">
+		<div class ="container">
+			<div class="logoHeader">
+				<a name="collection"></a>
+				<a href="index.html"><img class="logo" src="image/logo.png"></a>
+				<div class="infoShop">
+					<div class="netBox">
+						<a name="offer"></a>
+						<div class="net">Сеть магазинов</div><div class="center">Центр печати</div>
+					</div>
+					<div class="city">г. Казань</div>
+				</div>
+			</div>
+			<div class="headerDescription1">
+				<div>
+					<img src="image/headerText.png" class="headerText">
+				</div>
+			</div>
+			<div class="phoneBox">
+				<a name="call"></a>
+				<div class="phone"><span>216-36-96</span><br></div>
+				<button class="call" name="call" data-toggle="modal" data-target="#callCustom"><img src="image/phoneButton.png" class="phoneButton">ЗАКАЗАТЬ ЗВОНОК!</button>
+			</div>
+		</div>
+	</div>
+	<!-- Модальное окно -->
+	<div class="modal fade" id="callCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modalWindow">				
+				<div class="modal-content cintentModal">
+					<div class="modal-body callCustomModal" id="callCustomModal">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<div class="textModal">		
+							<p class="lead textModalParag">Оставьте, пожалуйста, свой номер телефона, чтобы мы могли оперативно связаться с Вами: </p>
+							<div id="callCustomModal1">
+								<form id="forma">
+									<div id="phone3"></div>
+									<input type="phone" id="phoneInput" name="sendPhone" class="callCustomInput" value="sendPhone" placeholder="7(9__) ___-__-__">
+									<button type="submit" class="buttonModal" value="call"  id="buttonModalCall" name="buttonModal">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Конец Модального окна -->
+		<div class="Layer layerKol">
+			<div class="container">
+				<div class="row">
+					<div id="layer1">
+						<div id="konst">
+							<div class="col-sm-7">
+								<div class="discountText">ХОЧЕШЬ <span class="boldText print1">ПРИНТ</span> НА ФУТБОЛКУ ПО <span class="boldText print1">АКЦИИ</span> <img src="image/35.png" id="discountText1"><span class="boldText" id="procent">%?</span><button id="discount35" data-toggle="modal" data-target="#procent35">Жми здесь!</button></div>
+								<!-- Модальное окно -->
+								<div class="modal fade" id="procent35" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modalWindow">
+											<div class="modal-content">
+												<div class="modal-body callCustomModal" id="procent35Modal">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<div class="textModal">
+														<p class="lead textModalParag">Укажите Ваш контактный номер, чтобы мы успели связаться с Вами до окончания акции:</p>
+														<div id="procent35Modal">
+															<div id="phone4"></div>
+															<form id="forma4">
+																<input type="phone" id="phoneInput1" name="procent35Phone" class="callCustomInput" value="procent35Phone" placeholder="7(9__) ___-__-__">
+																<button type="submit" id="buttonModal4" class="buttonModal">Отправить</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Конец Модального окна -->
+								<div id="slider">
+									<!-- Слайдер -->
+									<div id="carousel" class="carousel slide" data-interval="7000" data-ride="carousel" pause="hover">
+										<div class="carousel-inner">
+											<div class="item active">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/slider1.jpg" alt="Футболка1" class="slide">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/1.jpg" alt="Футболка2">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/2.jpg" alt="Футболка3">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/3.jpg" alt="Футболка4">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/4.jpg" alt="Футболка5">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/5.jpg" alt="Футболка6">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/6.jpg" alt="Футболка7">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/7.jpg" alt="Футболка8">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/8.jpg" alt="Футболка9">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton" class="slideOrderButton" data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/9.jpg" alt="Футболка10">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton"  data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/10.jpg" alt="Футболка11">
+											</div>
+											<div class="item">
+												<input type="button" name="orderSlide1" value="Хочу такую!" class="slideOrderButton"  data-toggle="modal" data-target="#slideOrderModal">
+												<img src="image/slide/11.jpg" alt="Футболка12">
+											</div>
+										</div>
+										<a class="left carousel-control" href="#carousel" data-slide="prev" id="leftControl"><img src="image/left_slider.png" class="controlSlider" id="leftControl"></a>
+										<a class="right carousel-control" href="#carousel" data-slide="next" id="rightControl"><img src="image/right_slider.png" class="controlSlider"></a>
+									</div>
+								</div>
+								<div class="clearfix" id="sliderSmallBox">
+									<div id="thumbcarousel" class="carousel slide" data-interval="5000" data-ride="carousel" pause="hover">
+										<div class="carousel-inner" id="sliderSmall">
+											<div class="item active">
+												<div data-target="#carousel" data-slide-to="0" class="thumb"><img src="image/slide/smallSlide/slide1.png" alt="Футболка1"></div>
+												<div data-target="#carousel" data-slide-to="1" class="thumb"><img src="image/slide/smallSlide/1.png"></div>
+												<div data-target="#carousel" data-slide-to="2" class="thumb"><img src="image/slide/smallSlide/2.png"></div>
+												<div data-target="#carousel" data-slide-to="3" class="thumb"><img src="image/slide/smallSlide/3.png"></div>
+												<div data-target="#carousel" data-slide-to="4" class="thumb"><img src="image/slide/smallSlide/4.png"></div>
+												<div data-target="#carousel" data-slide-to="5" class="thumb"><img src="image/slide/smallSlide/5.png"></div>
+											</div>
+											<div class="item">
+												<div data-target="#carousel" data-slide-to="6" class="thumb"><img src="image/slide/smallSlide/6.png" alt="Футболка1"></div>
+												<div data-target="#carousel" data-slide-to="7" class="thumb"><img src="image/slide/smallSlide/7.png" alt="Футболка2"></div>
+												<div data-target="#carousel" data-slide-to="8" class="thumb"><img src="image/slide/smallSlide/8.png" alt="Футболка3"></div>
+												<div data-target="#carousel" data-slide-to="9" class="thumb"><img src="image/slide/smallSlide/9.png" alt="Футболка3"></div>
+												<div data-target="#carousel" data-slide-to="10" class="thumb"><img src="image/slide/smallSlide/10.png" alt="Футболка3"></div>
+												<div data-target="#carousel" data-slide-to="10" class="thumb"><img src="image/slide/smallSlide/11.png" alt="Футболка3"></div>
+											</div>
+										</div>
+										<a class="left carousel-control" href="#thumbcarousel" data-slide="prev" id="caroselSmallLeft">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+										</a>
+										<a class="right carousel-control" href="#thumbcarousel" data-slide="next" id="caroselSmallRight">
+										<span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>
+								</div>
+							</div>
+							<!-- Начала Модальное окно -->
+							<div class="modal fade" id="slideOrderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modalWindow">				
+										<div class="modal-content cintentModal">
+											<div class="modal-body callCustomModal" id="sliederModal">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<div class="textModal">		
+													<p class="lead textModalParag">Приготовьтесь сообщить размеры футболки и свои пожелания, сейчас Вам позвонит наш специалист, чтобы принять заказ:</p>
+													<div id="sliederModal1">
+														<form id="formaSlider">
+															<div id="phoneSliderError" style="font-size: 13px;"></div>
+															<input type="phone" id="phoneSlider" name="sendPhone" class="callCustomInput" value="sendPhone" placeholder="7(9__) ___-__-__">
+															<button type="submit" class="buttonModal" value="call"  id="buttonModalSlider" name="buttonModal">Отправить</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Конец модального окна -->
+							<div class="col-sm-5">
+								<div>
+									<div class="HeadConsBox" id="myDisign">
+										<div class="HeadCons">
+											<h2><div>Сделай свой дизайн</div></h2><div id="HeadText2">за <span class="text1">минуту</span> и скачай!</div>
+											<div class="phoneBox1">
+											<div id="phone1"></div>
+											<form action="konstruktor.php" method="POST">
+												<!-- <label for="phoneSubmot" class="phoneLabel">
+												<div class="phoneText"><span class="phoneText1">Телефон:</span></label> -->
+												<!-- <input type="phone" name="phone" id="phoneSubmot" value="sendPhone1" placeholder="7(9__) ___-__-__" required> -->
+											</div>
+										</div>
+										<div class="HeadCons">
+											<button type="submit" name="interpreter" id="interpreter" class="design" data-toggle="modal" data-target="#disainMaket"><span id="textButton1">Попробовать</span> бесплатно!</button><br>
+										</div>
+										</form>
+									</div>
+									<div class="phoneSpecify">
+										УКАЖИТЕ, ПОЖАЛУЙСТА, ВАШ НОМЕР ТЕЛЕФОНА<br>ЧТОБЫ МЫ МОГЛИ СВЯЗАТЬСЯ С ВАМИ
+									</div>
+<!-- 										<script>
+											$(document).ready(function(){
+												$("#konstructor").click(function(){
+													$.ajax({
+														url: "konstruktor.html",
+														type: "GET",
+														data: {},
+														success: function(data){
+															$("#konst").html(data);
+														}
+													});
+												});
+											});
+										</script> -->
+										<!-- Начало модального окна -->
+										<!-- <div class="modal fade" id="disainMaket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modalWindow">				
+													<div class="modal-content">
+														<div class="modal-body callCustomModal" id="phonePhotoModal1">
+															<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+															<div class="textModal">
+																<p class="lead textModalParag">Оставьте, пожалуйста, свой номер телефона, чтобы мы могли оперативно связаться с Вами: </p>
+																<div id="phone5" style="font-size: 14px;"></div>
+																<form id="forma5" method="POST" action="sendEmail.php" enctype="multipart/form-data">
+																<input type="phone" id="phonePhoto1" name="phonePhoto1" class="callCustomInput" placeholder="7(9__) ___-__-__">
+																<div class="fileForm">
+																	<div id="fileFormLabel1"></div>
+																	<div class="selectButton">Выбрать фото</div>
+																	<input type="file" id="imgFile1" name="imgFile1" accept="image/jpeg, image/png" onchange="getName1()">
+																</div>
+																<button type="submit" id="phonePhotoBut1" class="buttonModal">Отправить</button>
+															</div>
+															</form>
+															<script>
+															function getName1 (){
+																try {
+																    var file = document.getElementById('imgFile1').files[0];
+																      document.getElementById('fileFormLabel1').innerHTML = file.name;
+																  }
+																  catch(e) {
+																    var file = document.getElementById('imgFile1').value;
+																    file = file.replace(/\\/g, "/").split('/').pop();
+																    document.getElementById('fileFormLabel1').innerHTML = file;
+																  }
+															}
+															</script>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div> -->
+										<!-- Конец модалоьного окна -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="lineLayer">
+			<div class="container">
+				<div class="col-md-8">
+					<p class="textLayer">Отправьте Ваши <span class="lineTextStyle1">фото</span> - и мы сделаем <br>Вам <span class="lineTextStyle1">бесплатный</span> макет в течение 2 часов!</p>
+				</div>
+				<div class="col-md-4 buttonLayer">
+					<button type="button" name="sendPhoto" class="design buttonLayerForm" data-toggle="modal" data-target="#sendPhotoModal">Отправить <span id="OrderButton3">фото</span></button>
+				</div>
+				<!-- Модальное окно -->
+				<div class="modal fade" id="sendPhotoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modalWindow">				
+							<div class="modal-content">
+								<div class="modal-body callCustomModal" id="phonePhotoModal">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<div class="textModal">
+										<p class="lead textModalParag">Оставьте, пожалуйста, свой номер телефона, чтобы мы могли оперативно связаться с Вами: </p>
+										<div id="phone6" style="font-size: 14px;"></div>
+										<form id="forma1" method="POST" action="sendEmail.php" enctype="multipart/form-data">
+										<input type="phone" id="phonePhoto" name="phonePhoto" class="callCustomInput" placeholder="7(9__) ___-__-__">
+										<div class="fileForm">
+											<div id="fileFormLabel"></div>
+											<div class="selectButton">Выбрать фото</div>
+											<input type="file" id="imgFile" name="imgFile" accept="image/jpeg, image/png" onchange="getName()">
+										</div>
+										<button type="submit" id="phonePhotoBut" class="buttonModal">Отправить</button>
+									</div>
+									</form>
+									<script>
+									function getName (){
+										try {
+										    var file = document.getElementById('imgFile').files[0];
+										      document.getElementById('fileFormLabel').innerHTML = file.name;
+										  }
+										  catch(e) {
+										    var file = document.getElementById('imgFile').value;
+										    file = file.replace(/\\/g, "/").split('/').pop();
+										    document.getElementById('fileFormLabel').innerHTML = file;
+										  }
+									}
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Конец модального окна -->
+			</div>
+		</div>
+		<div class="layer layerKol">
+			<div>
+				<div class="container">
+					<h1 class="titleBox" id="textBox1">Популярные <span class="textBox1">коллекции</span> принтов</h1>
+					<div class="row">
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/10.jpg">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/2.jpg">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/3.jpg">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/4.jpg" id="imageCollection4">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/5.jpg" id="imageCollection5">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/6.jpg" id="imageCollection6">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/7.png" id="imageCollection7">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="thumbnail">
+								<img src="image/collection/8.png">
+								<div class="caption">
+									<a href="konstruktor.php" class="editImage" style="text-decoration: none;"><input type="button" name="edit" class="buttonEdit" value="Редактировать"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lineLayer">
+			<div class="container">
+				<div class="col-md-7">
+					<p class="textLayer">Вы <span class="lineTextStyle2">платите</span>, только <br>когда получаете принт в руки</p>
+				</div>
+				<div class="col-md-5 buttonLayer">
+					<button name="customLayout" class="design buttonLayerForm" data-toggle="modal" data-target="#MyMaket">Заказать <span id="OrderButton1">свой макет</span></button>
+				</div>
+				<!-- Модальное окно -->
+				<div class="modal fade" id="MyMaket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modalWindow">				
+							<div class="modal-content">
+								<div class="modal-body callCustomModal" id="callMaketModal">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<div class="textModal">
+										<p class="lead textModalParag">Оставьте свой номер телефона и наш специалист с Вами свяжется</p>
+										<div id="phone7" style="font-size: 14px;"></div>
+										<form id="forma3">
+											<div></div><input type="phone" id="callMaket" class="callCustomInput" placeholder="7(9__) ___-__-__">
+											<button type="submit" id="buttonModal3" class="buttonModal">Отправить</button>
+										</form>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Конец модального окна -->
+			</div>
+		</div>
+		<div class="layer layerKol">
+			<div class="container">
+				<div class="row">				
+					<div class="col-md-6">
+						<div id="sale65">
+							<div class="HeadConsBox">
+								<div class="HeadCons">
+									<div id="saleDiscount">
+										<div id="textDiscount">
+											Получи список изделий на распродажу!
+										</div>
+										<div class="phoneBox1">
+											<div id="phone2"></div>
+											<label for="phoneSubmot1" class="phoneLabel">
+												<div class="phoneText">
+												<span class="phoneText1">Телефон:</span>
+											</label>
+											<input type="text" name="phone" id="phoneSubmot1" placeholder="7(9__) ___-__-__"></div>
+										</div>
+									</div>
+								</div>
+								<div class="HeadCons">
+									<button type="button" name="design" class="design" id="discoutnButton"><span id="textButton1">Попробовать</span> бесплатно</button>
+								</div>
+								<div class="phoneSpecify" id="numbrPoint">
+									УКАЖИТЕ, ПОЖАЛУЙСТА, ВАШ НОМЕР ТЕЛЕФОНА <br>ЧТОБЫ МЫ МОГЛИ СВЯЗАТЬСЯ С ВАМИ
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="col-md-6">
+						<img src="image/65.png" id="discount">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="logos" id="footer">
+		<div class ="container">
+			<div class="logoHeader">
+				<img class="logo" src="image/logo.png">
+				<div class="infoShop">
+					<div class="netBox">
+						<div class="net">Сеть магазинов</div><div class="center">Центр печати</div>
+					</div>
+					<div class="city">г. Казань</div>
+				</div>
+			</div>
+			<div class="headerDescription1">
+				<div>
+					<img src="image/headerText.png" class="headerText">
+				</div>
+			</div>
+			<div class="phoneBox">
+				<div class="phone"><span>216-36-96</span><br></div>
+				<button class="call" name="call" data-toggle="modal" data-target="#callCustom"><img src="image/phoneButton.png" class="phoneButton">ЗАКАЗАТЬ ЗВОНОК!</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

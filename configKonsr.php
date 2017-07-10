@@ -1,5 +1,5 @@
 <?php 
-function sendSMTP($to, $subject, $message, $attach=false)
+function sendSMTP($to, $subject, $message, $attachment = array())
 {
 	require("class.phpmailer.php");
 	require("class.smtp.php");
@@ -13,16 +13,15 @@ function sendSMTP($to, $subject, $message, $attach=false)
 	$mail->SMTPAuth = true;
 	$mail->CharSet = "utf-8";
 	$mail->Username = "holland.itkzn@gmail.com";
-	$mail->Password = "123456";
+	$mail->Password = "kazan1811";
 	$mail->addAddress($to);
 	$mail->From = $to;
 	$mail->Subject = $subject;
 	$mail->Body = $message;
-	if (isset($_FILES["photo"])){
-		if ($_FILES["photo"]["error"]==0) {
-			$mail->AddAttachment($_FILES["photo"]["tmp_name"], $_FILES["photo"]["name"]);
-		}
+	foreach ($attachment as $file) {
+		$mail->addAttachment($file);
 	}
+
 	if($mail->Send()){
 		header("Location: thank.php");
 	}else{echo "письмо не отправлено"; echo "Ошибка: ".$mail->ErrorInfo;}

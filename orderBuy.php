@@ -105,8 +105,8 @@ switch ($fontFace) {
 }
 
 
-header("Location: thank.php");
-
+	
+// header("Location: thank.php");
 $im = imagecreatetruecolor(466, 465);
 
 
@@ -144,7 +144,7 @@ if (isset($_FILES["photo"]))
 { if ($_FILES["photo"]["error"] == 0) {
 	$imageFile = move_uploaded_file($_FILES["photo"]["tmp_name"], "image/img/".$_FILES["photo"]["name"]);
 	$imageFile1 = "image/img/".$_FILES["photo"]["name"];
-	$imageSave = "image/imgKonstr/".$_FILES["photo"]["name"];
+	$imageSave = "image/imgKonstr/".time().'.png';
 
 	switch ($_FILES["photo"]["type"]) {
 		case 'image/png':
@@ -167,9 +167,11 @@ if (isset($_FILES["photo"]))
 	if ($size == 0) {
 		$size = $width2;
 	} else {
-		$size = $size;
+		$size = 60+10*$size;
 	}
-	imagecopyresampled($im, $rotate, (int)$leftCanvas, (int)$topCanvas, 0, 0, $size, $height1, $width1, $height1);
+	$height_new = (($height1*$size)/$width1);
+
+	imagecopyresampled($im, $rotate, (int)$leftCanvas, (int)$topCanvas, 0, 0, $size, $height_new, $width1, $height1);
 	imagedestroy($im2);	
 	imagedestroy($rotate);
 	}
@@ -185,8 +187,9 @@ imagecopyresampled($im, $im1, 0, 0, 0, 0, 466, 465, $width, $height);
 // header('Content-Type: image/jpeg');
 // imagejpeg($im);
 imagejpeg($im, $imageSave, 100);
-imagedestroy($im);
-imagedestroy($im1);
+// imagedestroy($im);
+// imagedestroy($im1);
+header("Location: thank.php");
 
 $tel = htmlspecialchars($_POST["phoneOrder"]);
 $sizeFutbol = htmlspecialchars($_POST["sizeFutbol"]);
